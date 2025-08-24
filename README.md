@@ -29,14 +29,14 @@ This tool is built with Python and is a personal student project
 
 2. Create a Python virtual environment (recommended):
 
-	python -m venv venv
+	`python -m venv venv`
 
 
 3. Activate the virtual environment:
 
 - Windows:
 
-	venv\Scripts\activate
+	`venv\Scripts\activate`
 
 
 Install dependencies:
@@ -55,9 +55,9 @@ RedTemple can be run directly from the command line
 
 1. Audit a password:
 
-	RedTemple.exe -p "My$ecret123"
+	`RedTemple.exe -p "My$ecret123"`
 	
-	Output:
+	`Output:
 	[+] Detected plain password: My$ecret123
 	[+] Password Strength: Fair (2/4)
 	[+] Estimated Crack Times:
@@ -69,14 +69,14 @@ RedTemple can be run directly from the command line
 		- Add another word or two. Uncommon words are better.
 		- Capitalization doesn't help very much.
 		- Predictable substitutions like '@' instead of 'a' don't help very much.
-	[!] This password has been seen 2 times in breaches!
+	[!] This password has been seen 2 times in breaches!`
 	
 2. Audit a Hash:
 	
-	RedTemple.exe -H 5f4dcc3b5aa765d61d8327deb882cf99
+	`RedTemple.exe -H 5f4dcc3b5aa765d61d8327deb882cf99`
 	
 	Output:
-	[+] Detected hash: 5f4dcc3b5aa765d61d8327deb882cf99
+	`[+] Detected hash: 5f4dcc3b5aa765d61d8327deb882cf99
 	[+] Possible algorithms:
 		* MD4
 		* MD5
@@ -96,13 +96,13 @@ RedTemple can be run directly from the command line
 		- Skype
 		- Snefru-128
 		- Tiger-128
-		- ZipMonster
+		- ZipMonster`
 		
 3. Auto-detect input type (password or hash):
 
-	RedTemple.exe password123!
+	`RedTemple.exe password123!`
 	
-	Output:
+	`Output:
 	[+] Auto-detected plain password: password123!
 	[+] Password Strength: Weak (1/4)
 	[+] Estimated Crack Times:
@@ -113,7 +113,7 @@ RedTemple can be run directly from the command line
 	[!] Warning: This is similar to a commonly used password.
 	[+] Suggestions:
 		- Add another word or two. Uncommon words are better.
-	[!] This password has been seen 18,933 times in breaches!
+	[!] This password has been seen 18,933 times in breaches!`
 	
 	
 ## Notes
